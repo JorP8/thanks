@@ -1,0 +1,217 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Josefin Sans;
+}
+html {
+  scroll-behavior: smooth;
+}
+.conteiner {
+  display: flex;
+  flex-direction: column;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 10vh;
+  background-color: #0c8346;
+  align-items: center;
+  position: fixed;
+}
+/* menu con links del menu hamburguesa */
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 10vh;
+  width: 100%;
+  height: 100vh;
+  display: none; /* ****** */
+  background-color: rgba(7, 189, 104, 0.675);
+  text-align: center;
+}
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 20px;
+}
+.menu ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+}
+
+.menu.active {
+  display: block;
+}
+.menu-toggle i {
+  font-size: 30px;
+  margin: 5px;
+  cursor: pointer;
+}
+.logo i {
+  font-size: 30px;
+  padding: 5px;
+}
+
+/* ------ */
+/* hero */
+#hero {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: #0d5d56;
+}
+.hero-info {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 5%;
+  flex-wrap: wrap;
+}
+.hero-titulo {
+  justify-content: center;
+  text-align: center;
+}
+.hero-titulo h1 {
+  font-size: 90px;
+  color: #fff;
+  /* animation: ache1 4s ease-in; */
+}
+
+/* animacion de h1 */
+/* @keyframes ache1 {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 10px;
+  }
+} */
+/* ---- */
+.hero-titulo a {
+  font-size: 32px;
+  color: #fff;
+  text-decoration: none;
+  background: #0c8346;
+  padding: 7px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px 1px #000;
+}
+.hero-titulo a:hover {
+  transition: all 1s ease-in-out;
+  color: #0c8346;
+  background: #fff;
+  box-shadow: 5px 5px 10px 1px #0c8346;
+}
+.hero-logo img {
+  width: 200px;
+  border-radius: 50px;
+}
+
+/* section 1 */
+#sec1 {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: #0c8346;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 80px;
+}
+/* titulo */
+.titulo h2 {
+  color: #000;
+  font-size: 32px;
+}
+/* formulario */
+.formulario {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  /* background-color: red; */
+  justify-content: center;
+  background-color: #0c8346;
+}
+/* contenedor del formulario */
+.contenedor-formulario {
+  display: flex;
+  width: 90%;
+  /*  height: auto;
+  background-color: yellow; */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contenedor-formulario h2 {
+  margin: 5px;
+  color: #fff;
+}
+/* inputs del formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+form input {
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  padding: 0 5px;
+  font-size: 18px;
+  box-shadow: 5px 5px 10px 1px #000;
+}
+form textarea {
+  height: 250px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 5px;
+  font-size: 18px;
+  box-shadow: 5px 5px 10px 1px #000;
+}
+.btn-enviar:hover {
+  transition: all 1s ease;
+  background: #0d5d56;
+  color: #fff;
+}
+form input:focus {
+  outline: none;
+}
+form textarea:focus {
+  outline: none;
+}
+
+/* footer */
+footer {
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  background-color: #1c1c1c;
+  justify-content: center;
+  align-items: center;
+}
+.footer-info {
+  color: #fff;
+}
+
+/* responsividad hero */
+@media (min-width: 568px) {
+  .hero-info {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 5%;
+    flex-wrap: wrap;
+  }
+}
+
+/* ---------- */
